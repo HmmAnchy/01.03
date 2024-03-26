@@ -38,4 +38,11 @@ class MainActivity : AppCompatActivity() {
         randomIntent.putExtra(SecondActivity.TOTAL_COUNT,count)
         startActivity(randomIntent)
     }
+
+    fun minusMe (view: View) {
+        val countString = textView.text.toString()
+        var count: Int = Integer.parseInt(countString)
+        count--
+        textView.text = count.toString();
+    }
 }
