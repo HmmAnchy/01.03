@@ -13,13 +13,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        findViewById(textView)
+
+        textView=findViewById(R.id.textView)
     }
 
     fun toastMe (view: View) {
         val myToast = Toast.makeText(this, "Hello Toast", Toast.LENGTH_SHORT)
         myToast.show()
-        textView = findViewById(R.id.textView)
     }
 
     private lateinit var textView: TextView
