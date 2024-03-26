@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:aapt="http://schemas.android.com/aapt"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background" >
+    android:background="@drawable/background">
 
 
     <ImageView
@@ -22,8 +22,8 @@
 
     <LinearLayout
         android:id="@+id/Wekcome_Text"
-        android:layout_width="388dp"
-        android:layout_height="142dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,10 +33,14 @@
         app:layout_constraintTop_toTopOf="@+id/Logo"
         app:layout_constraintVertical_bias="0.613">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="302dp" />
+
         <TextView
             android:id="@+id/ПРИВЕТ"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya"
             android:text="ПРИВЕТ"
             android:textAlignment="center"
@@ -57,42 +61,35 @@
             android:textStyle="bold"
             android:visibility="visible" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="83dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="367dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#7C9A92"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Войти в аккаунт"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:visibility="visible"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/Еще_нет..."
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Ещё нет аккаунта? \ Зарегистрируйтесь"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="367dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#7C9A92"
-        android:fontFamily="@font/alegreya_sans"
-        android:text="Войти в аккаунт"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:visibility="visible"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Wekcome_Text"
-        app:layout_constraintVertical_bias="0.233" />
-
-    <TextView
-        android:id="@+id/Еще_нет..."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alegreya_sans"
-        android:text="Ещё нет аккаунта? \ Зарегистрируйтесь"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
