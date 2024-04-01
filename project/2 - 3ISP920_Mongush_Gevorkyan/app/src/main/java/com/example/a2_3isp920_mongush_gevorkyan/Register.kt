@@ -5,13 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class MainActivity : AppCompatActivity() {
+class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
     }
-    fun registerActivity(view: View) {
-        val registerIntent = Intent(this, Register::class.java)
-        startActivity(registerIntent)
+
+    fun backMain(view: View) {
+        val MainIntent = Intent(this, MainActivity::class.java)
+        startActivity(MainIntent)
     }
 }

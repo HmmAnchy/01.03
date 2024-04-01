@@ -13,6 +13,9 @@
         android:theme="@style/Theme._23ISP920_Mongush_Gevorkyan"
         tools:targetApi="31">
         <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

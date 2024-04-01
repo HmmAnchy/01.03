@@ -88,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:fontFamily="@font/alegreya_sans"
+            android:onClick="registerActivity"
             android:text="Ещё нет аккаунта? \ Зарегистрируйтесь"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
