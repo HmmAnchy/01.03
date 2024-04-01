@@ -21,9 +21,10 @@
         app:srcCompat="@drawable/logo" />
 
     <LinearLayout
-        android:id="@+id/Wekcome_Text"
+        android:id="@+id/Layouts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="25dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +64,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="83dp" />
+            android:layout_height="77dp" />
 
         <Button
             android:id="@+id/button"
@@ -77,6 +78,10 @@
             android:textSize="25sp"
             android:visibility="visible"
             app:cornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
 
         <TextView
             android:id="@+id/Еще_нет..."
