@@ -12,7 +12,7 @@ class Register : AppCompatActivity() {
     }
 
     fun backMain(view: View) {
-        val MainIntent = Intent(this, MainActivity::class.java)
+        val MainIntent = Intent(this, Onboarding::class.java)
         startActivity(MainIntent)
     }
 }

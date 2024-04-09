@@ -72,6 +72,7 @@
             android:layout_height="70dp"
             android:backgroundTint="#7C9A92"
             android:fontFamily="@font/alegreya_sans"
+            android:onClick="Login"
             android:text="Войти в аккаунт"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
